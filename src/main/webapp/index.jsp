@@ -29,7 +29,7 @@
 		<br/>
 		
 		<div id="imagem">
-		<font align="center" color="red">
+		<font align="center" color="blue">
 
 		<a href="comprarps4.jsp"><img src="resources/imagens/PS4.jpg"
 		onMouseOver="this.src='resources/imagens/PS42.jpg'"
