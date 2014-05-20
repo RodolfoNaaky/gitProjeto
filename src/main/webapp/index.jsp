@@ -25,7 +25,7 @@
 		<br/>
 		</div>
 
-		<h2><strong>Produtos</strong></h2>
+		<h3><strong>Produtos</strong></h3>
 		<br/>
 		
 		<div id="imagem">
