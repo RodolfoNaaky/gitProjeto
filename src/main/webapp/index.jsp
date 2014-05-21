@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<h1>Dia</h1>
 		<div id="menu" align="center">
 		<ul>
 		<li><a href="index.jsp">Home</a></li>
