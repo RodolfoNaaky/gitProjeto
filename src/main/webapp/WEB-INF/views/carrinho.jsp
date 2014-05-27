@@ -25,7 +25,7 @@
 									<li><a href="carrinho"> Carrinho</a></li>
 									<li><a href="pedidos"> Ver Pedidos</a></li>
 									<li><a href="fatura"> Fatura</a></li>
-									<li><a href="loguin">Login</a></li>
+									<li><a href="login">Login</a></li>
 									<li><a href="contato"> Contato </a></li>
 								</ul>
 							</div>

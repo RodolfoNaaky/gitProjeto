@@ -25,7 +25,7 @@
 									<li><a href="carrinho"> Carrinho</a></li>
 									<li><a href="pedidos"> Ver Pedidos</a></li>
 									<li><a href="fatura"> Fatura</a></li>
-									<li><a href="loguin">Login</a></li>
+									<li><a href="login">Login</a></li>
 									<li><a href="contato"> Contato </a></li>
 								</ul>
 							</div>
@@ -35,7 +35,7 @@
 									type="text" id="googlesearch"><input type="button"
 									class="btn btn-small btn-primary" value="Pesquisar"> <br /></br>
 							</div>
-						</div>>
+						</div>
 
 
 						<div align="center" id="imagemCompra">
