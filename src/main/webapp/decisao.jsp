@@ -18,7 +18,7 @@
 						<div id="menu" align="center" class="imagem0">
 							<div class="navbar">
 								<ul>
-								
+
 									<li><a href="index.jsp"> Home</a></li>
 									<li><a href="carrinho.jsp"> Carrinho</a></li>
 									<li><a href="pedidos.jsp"> Ver Pedidos</a></li>
@@ -30,7 +30,7 @@
 
 							<div id="barradebusca">
 								<strong><h1 id="carousel">Naaky Games</h1></strong> <input
-									type="text" id="googlesearch"><input type="button" 
+									type="text" id="googlesearch"><input type="button"
 									class="btn btn-small btn-primary" value="Pesquisar"> <br /></br>
 							</div>
 						</div>
@@ -38,63 +38,51 @@
 
 
 
-						<strong><h2>Produtos</h2></strong>
+
+
 						<div>
-							<br /></br> </br>
+							<h3 align="center">
+								<font color="red">
 
-							<div id="imagem">
-								<font align="center" color="blue"> <a
-									href="comprarps4.jsp"><img src="Imagens/a.png"
-										onMouseOver="this.src='Imagens/f.png'"
-										onMouseOut="this.src='Imagens/a.png'" width="500" height="300"></img></a>
-									<p>Valor:R$1.669,00</p>
-									<p>12x R$161,32</p>
-									<p>sem juros</p>
+									<hr size="15">
+
+									</hr> <br /> <br /> <br />
+									<h3>Por favor faça um cadastro em nossa loja para efetuar
+										sua compra caso ja tenha</h3> <br /> <br /> <br />
+
+									<h3>Apenas faça o login e prossiga com sua compra!</h3> <br />
+									<br /> <br />
+
 								</font>
-							</div>
+								<hr size="15" color="red">
 
-							<div id="imagem1">
-								<font align="center" color="red"> <a
-									href="comprarxbox.jsp"><img src="Imagens/x.png"
-										onMouseOver="this.src='Imagens/d.png'"
-										onMouseOut="this.src='Imagens/x.png'" width="500" height="300"></img></a>
-									<p>Valor:R$1.999,00</p>
-									<p>12x R$165,83</p>
-									<p>sem juros</p>
-								</font>
-							</div>
+								</hr>
 
-							<br />
+							</h3>
+							<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+							<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 
-							<div id="imagem2">
-								<font align="center" color="red"> <a
-									href="comprarps3.jsp"><img src="Imagens/PS3.png"
-										onMouseOver="this.src='Imagens/e.png'"
-										onMouseOut="this.src='Imagens/PS3.png'" width="500"
-										height="300"></img></a>
-									<p>Valor:R$1.249,00</p>
-									<p>12x R$104,80</p>
-									<p>sem juros</p></font>
-							</div>
+							<h2>
+								<font color="red">
 
-							<div id="imagem3">
-								<font align="center" color="red"> <a
-									href="Comprarwii.jsp"><img src="Imagens/b.png"
-										onMouseOver="this.src='Imagens/c.png'"
-										onMouseOut="this.src='Imagens/b.png'" width="500" height="300"></img></a>
-									<p>Valor:R$489,90</p>
-									<p>12x R$48,83
+
+									<h3>Ja Possui Cadastro em Nossa Loja?</h3> <br /> <br /> <br />
+									<br />
+
+
 									<p>
-									<p>sem juros</p>
+										<a href="loguin.jsp"><input color-button="red"
+											class="button" type="submit" id="sim" value="SIM" /></a> <a
+											href="cadastro.jsp"><input color-button="red"
+											class="button" type="submit" id="nao" value="NÃO" /></a>
+									</p> <br /> <br /> <br /> <br />
 								</font>
-							</div>
-						</div>
-					</div> </font>
-					</div>
-				</td>
-			</tr>
-		</table>
-		<script src="js/bootstrap.min.js"></script>
+								<hr size="5" color="red">
+
+								</hr>
+							<div>
+
+								<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.js"></script>
 		<script>
 			$('#carousel').animate({
@@ -116,7 +104,7 @@
 			});
 
 			$('p').animate({
-				marginLeft : 10
+				marginLeft : 150
 			}, 200);
 
 			$('p:animated').css({
@@ -200,3 +188,4 @@
 </body>
 
 </html>
+<html>
