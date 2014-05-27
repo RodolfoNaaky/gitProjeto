@@ -1,11 +1,13 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/index.css">
-<script src="jquery.js" type="text/javascript"></script>
+	<title>Home</title>
+	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
+	<script src="resources/js/jquery.js" type="text/javascript"></script>   
 </head>
 
 <body>
@@ -19,12 +21,12 @@
 							<div class="navbar">
 								<ul>
 
-									<li><a href="index.jsp"> Home</a></li>
-									<li><a href="carrinho.jsp"> Carrinho</a></li>
-									<li><a href="pedidos.jsp"> Ver Pedidos</a></li>
-									<li><a href="fatura.jsp"> Fatura</a></li>
-									<li><a href="loguin.jsp">Login</a></li>
-									<li><a href="contato.jsp"> Contato </a></li>
+									<li><a href="index"> Home</a></li>
+									<li><a href="carrinho"> Carrinho</a></li>
+									<li><a href="pedidos"> Ver Pedidos</a></li>
+									<li><a href="fatura"> Fatura</a></li>
+									<li><a href="loguin">Login</a></li>
+									<li><a href="contato"> Contato </a></li>
 								</ul>
 							</div>
 
@@ -132,8 +134,8 @@
 										</h4> 
 										
 										
-										<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.js"></script>
+										<script src="resources/js/bootstrap.min.js"></script>
+		<script src="resources/js/jquery.js"></script>
 		<script>
 			$('#carousel').animate({
 				"margin-left" : "+=800"

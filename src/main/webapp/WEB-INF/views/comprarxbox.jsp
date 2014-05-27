@@ -1,74 +1,175 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="resources/css/style.css">
+<!-- Bootstrap -->
+	<title>Home</title>
+	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
 	<script src="resources/js/jquery.js" type="text/javascript"></script>   
 </head>
 
-<style>
-
-#imagem{
-position:absolute;
-left:200px;
-top:300px;
-}
-
-
-</style>
-
 <body>
-			<div id="menu" align="center">
-		<ul>
-	<li><a href="index.jsp">Home</a></li>
-		<li><a href="carrinho">Carrrinho</a></li>
-		<li><a href="pedidos">Ver Pedidos</a></li>
-		<li><a href="fatura">Fatura</a></li>
-		<li><a href="login">Login</a></li>
-		<li><a href="contato">Contato</a></li>
-		</ul>
-		</div>
-		<div id="barradebusca">
-		<h1>Naaky Games</h1>
-		<input type="search" name="googlesearch"><input type="button" value="pesquisar">
-		</br></br>
-		</div>
 
-		<div align="center" id="imagem"><font size="50" color="red">
-		
+	<div>
+		<table cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<div id="content">
+						<div id="menu" align="center" class="imagem0">
+							<div class="navbar">
+								<ul>
 
-		<a href=""><img align="center" src="resources/imagens/xboxone.jpg" width="700" height="400" ></img></a>  
-		<p>Valor:R$1.999,00</p>
-		<p>12x R$165,83</br>
+									<li><a href="index"> Home</a></li>
+									<li><a href="carrinho"> Carrinho</a></li>
+									<li><a href="pedidos"> Ver Pedidos</a></li>
+									<li><a href="fatura"> Fatura</a></li>
+									<li><a href="loguin">Login</a></li>
+									<li><a href="contato"> Contato </a></li>
+								</ul>
+							</div>
 
-		sem juros
-
-
-   </p><a href="decisao.jsp"><input type="button" value="Comprar" name="Comprar"></a></p>        
-      </p><a href="index.jsp"><input type="button" value="Adiconar ao Carrinho" name="Adicionar ao Carrinho"></a></p>    
-        
-      </form>
-    </div>
-
-    <div class="login-help">
+							<div id="barradebusca">
+								<strong><h1 id="carousel">Naaky Games</h1></strong> <input
+									type="text" id="googlesearch"><input type="button"
+									class="btn btn-small btn-primary" value="Pesquisar"> <br /></br>
+							</div>
+						</div>
 
 
-</font>
+						<div align="center" id="imagemCompra">
+							<font size="50" color="red"> <a href=""><img
+									align="center" src="Imagens/x.png" width="700" height="400"></img></a>
+								<p>Valor:R$1.999,00</p>
+								<p>
+									12x R$165,83</br> sem juros
+
+
+								</p> <a href="decisao.jsp"><input type="button" value="Comprar"
+									class="btn btn-primary" name="Comprar"></a>
+								</p>
+								</p> <a href="index.jsp"><input type="button"
+									value="Adiconar ao Carrinho" class="btn btn-primary"
+									name="Adicionar ao Carrinho"></a>
+								</p>
+
+								</form>
+						</div>
+
+						<div class="login-help">
+
+
+							</font>
 
 
 
-		</div>
+						</div>
 
-<div>
-<script>
-$('h1').animate( {"margin-left" : "+=750"},10000 );
-	
+						<div>
+							<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script>
+			$('#carousel').animate({
+				"margin-left" : "+=800"
+			}, 10000);
 
+			$("h1,h2").mouseover(function() {
+				$(this).css('color', 'black');
+			});
+			$("h1,h2").mouseout(function() {
+				$(this).css('color', 'red');
+			});
 
-</script>
+			$("p").mouseover(function() {
+				$(this).css('color', 'black');
+			});
+			$("p").mouseout(function() {
+				$(this).css('color', 'red');
+			});
 
-</div>
+			$('p').animate({
+				marginLeft : 10
+			}, 200);
 
+			$('p:animated').css({
+				color : "#ff0000"
+			});
+
+			$('p').hover(function() {
+
+				$(this).stop().animate({
+					marginLeft : 20
+				}, 500)
+			},
+
+			function() {
+
+				$(this).stop().animate({
+					marginLeft : 0
+				}, 500);
+
+			});
+
+			$(document).ready(function() {
+				$("#hide").click(function() {
+					$("ul").hide();
+				});
+				$("#show").click(function() {
+					$("ul").show();
+					$('li').animate("slow");
+					slideUp();
+					slideDown();
+				});
+
+				$("#hide").mouseover(function() {
+					$(this).css('color', 'black');
+				});
+				$("#hide").mouseout(function() {
+					$(this).css('color', 'red');
+				});
+				$("#show").mouseover(function() {
+					$(this).css('color', 'black');
+				});
+				$("#show").mouseout(function() {
+					$(this).css('color', 'red');
+				});
+
+				$(document).ready(function() {
+
+					var speedText = 300;
+
+					var speedJump = 200;
+
+					$("#menu").hover(
+
+					function() {
+
+						$(this).next("span").stop().animate({
+							height : "70px",
+						}, speedJump);
+
+						$(this).stop().animate({
+							lineHeight : "40px"
+						}, speedText);
+
+					}, function() {
+
+						$(this).next("span").stop().animate({
+							height : "0px"
+						}, speedJump);
+
+						$(this).stop().animate({
+							lineHeight : "30px"
+						}, speedText);
+
+					});
+
+				});
+			});
+		</script>
+
+	</div>
 </body>
 
 </html>

@@ -1,11 +1,13 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/index.css">
-<script src="jquery.js" type="text/javascript"></script>
+	<title>Home</title>
+	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
+	<script src="resources/js/jquery.js" type="text/javascript"></script>   
 </head>
 
 <body>
@@ -44,9 +46,9 @@
 
 							<div id="imagem">
 								<font align="center" color="blue"> <a
-									href="comprarps4.jsp"><img src="Imagens/a.png"
-										onMouseOver="this.src='Imagens/f.png'"
-										onMouseOut="this.src='Imagens/a.png'" width="500" height="300"></img></a>
+									href="comprarps4.jsp"><img src="resources/Imagens/a.png"
+										onMouseOver="this.src='resources/Imagens/f.png'"
+										onMouseOut="this.src='resources/Imagens/a.png'" width="500" height="300"></img></a>
 									<p>Valor:R$1.669,00</p>
 									<p>12x R$161,32</p>
 									<p>sem juros</p>
@@ -55,9 +57,9 @@
 
 							<div id="imagem1">
 								<font align="center" color="red"> <a
-									href="comprarxbox.jsp"><img src="Imagens/x.png"
-										onMouseOver="this.src='Imagens/d.png'"
-										onMouseOut="this.src='Imagens/x.png'" width="500" height="300"></img></a>
+									href="comprarxbox.jsp"><img src="resources/Imagens/x.png"
+										onMouseOver="this.src='resources/Imagens/d.png'"
+										onMouseOut="this.src='resources/Imagens/x.png'" width="500" height="300"></img></a>
 									<p>Valor:R$1.999,00</p>
 									<p>12x R$165,83</p>
 									<p>sem juros</p>
@@ -68,9 +70,9 @@
 
 							<div id="imagem2">
 								<font align="center" color="red"> <a
-									href="comprarps3.jsp"><img src="Imagens/PS3.png"
-										onMouseOver="this.src='Imagens/e.png'"
-										onMouseOut="this.src='Imagens/PS3.png'" width="500"
+									href="comprarps3.jsp"><img src="resources/Imagens/PS3.png"
+										onMouseOver="this.src='resources/Imagens/e.png'"
+										onMouseOut="this.src='resources/Imagens/PS3.png'" width="500"
 										height="300"></img></a>
 									<p>Valor:R$1.249,00</p>
 									<p>12x R$104,80</p>
@@ -79,9 +81,9 @@
 
 							<div id="imagem3">
 								<font align="center" color="red"> <a
-									href="Comprarwii.jsp"><img src="Imagens/b.png"
-										onMouseOver="this.src='Imagens/c.png'"
-										onMouseOut="this.src='Imagens/b.png'" width="500" height="300"></img></a>
+									href="Comprarwii.jsp"><img src="resources/Imagens/b.png"
+										onMouseOver="this.src='resources/Imagens/c.png'"
+										onMouseOut="this.src='resources/Imagens/b.png'" width="500" height="300"></img></a>
 									<p>Valor:R$489,90</p>
 									<p>12x R$48,83
 									<p>
@@ -94,8 +96,8 @@
 				</td>
 			</tr>
 		</table>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.js"></script>
+		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="resources/js/jquery.js"></script>
 		<script>
 			$('#carousel').animate({
 				"margin-left" : "+=800"

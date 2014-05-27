@@ -15,34 +15,6 @@ h1{
 	text-align:center; /* hack para o IE */
 }
 
-#menu ul {
-padding: 0px;
-margin:50 px;
-float: center;
-width: 100%;
-background-color:white;
-list-style:none;
-font:Comic Sans;
-}
- 
-#menu ul li { display: inline; }
- 
-#menu ul li a {
-background-color:white;
-color: red;
-text-decoration: none;
-border-bottom:20px solid white;
-padding: 30px 70px;
-float:;
-font: comic-sans;
-}
- 
-#menu ul li a:hover {
-background-color:white;
-color: red;
-border-bottom:5px solid #EA0000;
-}
-
 td {
 color:#FF0000;
 /* a cor vermelha para as letras */

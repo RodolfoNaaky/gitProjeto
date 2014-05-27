@@ -7,6 +7,16 @@ import org.springframework.web.servlet.ModelAndView;
  
 @Controller
 public class HomeController {  
+	
+	
+    @RequestMapping(value="/")
+    public ModelAndView raiz() {
+        return new ModelAndView("index");
+    }
+    @RequestMapping(value="index")
+    public ModelAndView index() {
+        return new ModelAndView("index");
+    }
 		
     @RequestMapping(value="carrinho")
     public ModelAndView carrinho() {
@@ -34,5 +44,10 @@ public class HomeController {
     public ModelAndView contato() {
         return new ModelAndView("contato");
     }
+    @RequestMapping(value="cadastro")
+    public ModelAndView cadastro() {
+        return new ModelAndView("cadastro");
+    }
+    
     
 }   

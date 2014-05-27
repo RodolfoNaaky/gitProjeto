@@ -1,4 +1,4 @@
-package org.apache.jsp;
+package org.apache.jsp.WEB_002dINF.views;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
