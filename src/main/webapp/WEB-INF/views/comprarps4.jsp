@@ -5,8 +5,8 @@
 <head>
 <!-- Bootstrap -->
 	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
+	<link href="resources/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="resources/css/index.css" media="screen">
 	<script src="resources/js/jquery.js" type="text/javascript"></script>   
 </head>
 
@@ -46,10 +46,10 @@
 									12x R$161,32</br> sem juros
 
 
-								</p> <a href="decisao.jsp"><input type="button" value="Comprar"
+								</p> <a href="decisao"><input type="button" value="Comprar"
 									class="btn btn-primary" name="Comprar"></a>
 								</p>
-								</p> <a href="views/index.jsp"><input type="button"
+								</p> <a href="carrinho"><input type="button"
 									value="Adiconar ao Carrinho" class="btn btn-primary"
 									name="Adicionar ao Carrinho"></a>
 								</p>

@@ -48,15 +48,13 @@
 									12x R$104,80</br> sem juros
 
 
+								</p> <a href="decisao"><input type="button" value="Comprar"
+									class="btn btn-primary" name="Comprar"></a>
 								</p>
-								<a href="decisao.jsp"><input type="button"
-									class="btn btn-primary" value="Comprar" name="Comprar"></a>
-							</p>
-								</p>
-								<a href="index.jsp"><input type="button"
-									class="btn btn-primary" value="Adiconar ao Carrinho"
+								</p> <a href="carrinho"><input type="button"
+									value="Adiconar ao Carrinho" class="btn btn-primary"
 									name="Adicionar ao Carrinho"></a>
-							</p>
+								</p>
 
 
 

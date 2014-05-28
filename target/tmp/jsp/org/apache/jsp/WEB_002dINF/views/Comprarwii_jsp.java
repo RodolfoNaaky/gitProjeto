@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class carrinho_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class Comprarwii_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -85,22 +85,37 @@ public final class carrinho_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t</div>\n");
       out.write("\n");
       out.write("\n");
+      out.write("\t\t\t\t\t\t<div align=\"center\" id=\"imagemCompra\">\n");
+      out.write("\t\t\t\t\t\t\t<font size=\"50\" color=\"red\"> <a href=\"\"><img\n");
+      out.write("\t\t\t\t\t\t\t\t\talign=\"center\" src=\"resources/Imagens/c.png\" width=\"700\" height=\"400\"></img></a>\n");
+      out.write("\t\t\t\t\t\t\t\t<p>Valor:R$1.999,00</p>\n");
+      out.write("\t\t\t\t\t\t\t\t<p>\n");
+      out.write("\t\t\t\t\t\t\t\t\t12x R$165,83</br> sem juros\n");
       out.write("\n");
-      out.write("\t\t\t\t\t\t<div align=\"center\" id=\"produtos\">\n");
       out.write("\n");
+      out.write("\t\t\t\t\t\t\t\t</p> <a href=\"decisao\"><input type=\"button\" value=\"Comprar\"\n");
+      out.write("\t\t\t\t\t\t\t\t\tclass=\"btn btn-primary\" name=\"Comprar\"></a>\n");
+      out.write("\t\t\t\t\t\t\t\t</p>\n");
+      out.write("\t\t\t\t\t\t\t\t</p> <a href=\"carrinho\"><input type=\"button\"\n");
+      out.write("\t\t\t\t\t\t\t\t\tvalue=\"Adiconar ao Carrinho\" class=\"btn btn-primary\"\n");
+      out.write("\t\t\t\t\t\t\t\t\tname=\"Adicionar ao Carrinho\"></a>\n");
+      out.write("\t\t\t\t\t\t\t\t</p>\n");
       out.write("\n");
-      out.write("\t\t\t\t\t\t\t<h3>Você não tem nenhum item adicionado ao seu Carrinho!</h3>\n");
-      out.write("\t\t\t\t\t\t\t<hr align=\"center\" color=\"red\" size=\"20\">\n");
-      out.write("\t\t\t\t\t\t\t</hr>\n");
-      out.write("\t\t\t\t\t\t\t<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />\n");
-      out.write("\t\t\t\t\t\t\t<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />\n");
-      out.write("\t\t\t\t\t\t\t<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />\n");
-      out.write("\t\t\t\t\t\t\t<br /> <br /> <br /> <br /> <br />\n");
-      out.write("\t\t\t\t\t\t\t<hr align=\"center\" color=\"red\" size=\"20\">\n");
-      out.write("\t\t\t\t\t\t\t</hr>\n");
+      out.write("\t\t\t\t\t\t\t\t</form>\n");
       out.write("\t\t\t\t\t\t</div>\n");
-      out.write("\t\t\t\t\t\t<script src=\"resources/js/bootstrap.min.js\"></script>\n");
-      out.write("\t\t\t\t\t\t<script src=\"resources/js/jquery.js\"></script>\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t<div class=\"login-help\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t\t</font>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t<script src=\"js/bootstrap.min.js\"></script>\n");
+      out.write("\t\t\t\t\t\t<script src=\"js/jquery.js\"></script>\n");
       out.write("\t\t\t\t\t\t<script>\n");
       out.write("\t\t\t\t\t\t\t$('#carousel').animate({\n");
       out.write("\t\t\t\t\t\t\t\t\"margin-left\" : \"+=800\"\n");
@@ -121,7 +136,7 @@ public final class carrinho_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t\t});\n");
       out.write("\n");
       out.write("\t\t\t\t\t\t\t$('p').animate({\n");
-      out.write("\t\t\t\t\t\t\t\tmarginLeft : 150\n");
+      out.write("\t\t\t\t\t\t\t\tmarginLeft : 10\n");
       out.write("\t\t\t\t\t\t\t}, 200);\n");
       out.write("\n");
       out.write("\t\t\t\t\t\t\t$('p:animated').css({\n");

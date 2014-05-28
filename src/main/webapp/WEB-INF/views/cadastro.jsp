@@ -89,7 +89,7 @@
 								</tr>
 								<tr>
 									<td>Estado:</td>
-									<td><select name="estado" id="estado">
+									<td><select name="estado" id="estado" class= "btn btn-small btn-primary">
 											<option>Selecione...</option>
 											<option value="AC">AC</option>
 											<option value="AL">AL</option>

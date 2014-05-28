@@ -20,19 +20,19 @@
 						<div id="menu" align="center" class="imagem0">
 							<div class="navbar">
 								<ul>
-								
-									<li><a href="index.jsp"> Home</a></li>
-									<li><a href="carrinho.jsp"> Carrinho</a></li>
-									<li><a href="pedidos.jsp"> Ver Pedidos</a></li>
-									<li><a href="fatura.jsp"> Fatura</a></li>
-									<li><a href="loguin.jsp">Login</a></li>
-									<li><a href="contato.jsp"> Contato </a></li>
+
+									<li><a href="index"> Home</a></li>
+									<li><a href="carrinho"> Carrinho</a></li>
+									<li><a href="pedidos"> Ver Pedidos</a></li>
+									<li><a href="fatura"> Fatura</a></li>
+									<li><a href="login">Login</a></li>
+									<li><a href="contato"> Contato </a></li>
 								</ul>
 							</div>
 
 							<div id="barradebusca">
 								<strong><h1 id="carousel">Naaky Games</h1></strong> <input
-									type="text" id="googlesearch"><input type="button" 
+									type="text" id="googlesearch"><input type="button"
 									class="btn btn-small btn-primary" value="Pesquisar"> <br /></br>
 							</div>
 						</div>
@@ -46,7 +46,7 @@
 
 							<div id="imagem">
 								<font align="center" color="blue"> <a
-									href="comprarps4.jsp"><img src="resources/Imagens/a.png"
+									href="comprarps4" ><img src="resources/Imagens/a.png"
 										onMouseOver="this.src='resources/Imagens/f.png'"
 										onMouseOut="this.src='resources/Imagens/a.png'" width="500" height="300"></img></a>
 									<p>Valor:R$1.669,00</p>
@@ -57,7 +57,7 @@
 
 							<div id="imagem1">
 								<font align="center" color="red"> <a
-									href="comprarxbox.jsp"><img src="resources/Imagens/x.png"
+									href="comprarxbox"> <img src="resources/Imagens/x.png"
 										onMouseOver="this.src='resources/Imagens/d.png'"
 										onMouseOut="this.src='resources/Imagens/x.png'" width="500" height="300"></img></a>
 									<p>Valor:R$1.999,00</p>
@@ -70,7 +70,7 @@
 
 							<div id="imagem2">
 								<font align="center" color="red"> <a
-									href="comprarps3.jsp"><img src="resources/Imagens/PS3.png"
+									href="comprarps3"> <img src="resources/Imagens/PS3.png"
 										onMouseOver="this.src='resources/Imagens/e.png'"
 										onMouseOut="this.src='resources/Imagens/PS3.png'" width="500"
 										height="300"></img></a>
@@ -81,7 +81,7 @@
 
 							<div id="imagem3">
 								<font align="center" color="red"> <a
-									href="Comprarwii.jsp"><img src="resources/Imagens/b.png"
+									href="Comprarwii"><img src="resources/Imagens/b.png"
 										onMouseOver="this.src='resources/Imagens/c.png'"
 										onMouseOut="this.src='resources/Imagens/b.png'" width="500" height="300"></img></a>
 									<p>Valor:R$489,90</p>

@@ -4,10 +4,10 @@
 
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.example.app</groupId>
-<artifactId>MyApp</artifactId>
+<artifactId>lojaonline</artifactId>
 <packaging>war</packaging>
 <version>1.0</version>
-<name>MyApp</name>
+<name>lojaonline</name>
 <url>http://maven.apache.org</url>
 
 <!-- Version number of Spring -->
@@ -196,7 +196,6 @@ integration testing framework and unit testing stubs-->
         <scope>runtime</scope>
     </dependency>
 </dependencies>
-
     <build>
         <plugins>
             <plugin>

@@ -61,8 +61,8 @@
 								</hr>
 
 							</h3>
-							<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-							<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+							<br /> <br /> <br /> <br /> <br /> 
+							
 
 							<h2>
 								<font color="red">
@@ -72,12 +72,12 @@
 									<br />
 
 
-									<p>
-										<a href="loguin.jsp"><input color-button="red"
-											class="button" type="submit" id="sim" value="SIM" /></a> <a
-											href="cadastro.jsp"><input color-button="red"
-											class="button" type="submit" id="nao" value="NÃO" /></a>
-									</p> <br /> <br /> <br /> <br />
+									<h3>
+										<a href="login"><input color-button="red"
+											class="btn btn-primary" type="submit" id="sim" value="SIM" /></a> <a
+											href="cadastro"><input color-button="red"
+											class="btn btn-primary" type="submit" id="nao" value="NÃO" /></a>
+									</h3>
 								</font>
 								<hr size="5" color="red">
 

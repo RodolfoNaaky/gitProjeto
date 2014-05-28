@@ -40,16 +40,16 @@
 
 						<div align="center" id="imagemCompra">
 							<font size="50" color="red"> <a href=""><img
-									align="center" src="Imagens/x.png" width="700" height="400"></img></a>
+									align="center" src="resources/Imagens/x.png" width="700" height="400"></img></a>
 								<p>Valor:R$1.999,00</p>
 								<p>
 									12x R$165,83</br> sem juros
 
 
-								</p> <a href="decisao.jsp"><input type="button" value="Comprar"
+								</p> <a href="decisao"><input type="button" value="Comprar"
 									class="btn btn-primary" name="Comprar"></a>
 								</p>
-								</p> <a href="index.jsp"><input type="button"
+								</p> <a href="carrinho"><input type="button"
 									value="Adiconar ao Carrinho" class="btn btn-primary"
 									name="Adicionar ao Carrinho"></a>
 								</p>
