@@ -1,12 +1,33 @@
 package br.com.lojaonline.controller;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
+//Código do Mano
+	@Controller
+	@RequestMapping(value = "/views/*")
+	public class EnderecoController {
 
+		@Autowired
+		private EnderecoDAO enderecoDao;
+	}
+
+	@Repository("enderecoDao")
+	public class EnderecoDAO {
+
+		@PersistenceContext
+		public EntityManager entityManager;
+
+	}
+// Fim Código mano
 	@RequestMapping(value = "/")
 	public ModelAndView raiz() {
 		return new ModelAndView("index");

@@ -96,9 +96,9 @@ return false;
 else
 return true;
 }
-<!-- Fim do JavaScript que validará os campos obrigatórios! -->
+
 </script>
-						</head>
+				
 
 						<body>
 							<div align="center">

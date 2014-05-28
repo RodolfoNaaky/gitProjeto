@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import br.com.lojaonline.model.Endereco;
@@ -16,6 +17,7 @@ public class Usuario {
 	
 	@Id @Column(name="idUsuario") @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idUsuario;
+	@OneToOne
 	Endereco endereco;
 	private String nomeUsuario;
 	private Date dataNasc;

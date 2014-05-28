@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+<beans xmlns="http://www.springframework.org/schema/mvc"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -8,7 +8,38 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
-		
+		<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <property name="dataSource" ref="dbDataSource">
+    <property name="jpaVendorAdapter"></property>
+        <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+    </property>
+</bean>
+<!-- //HABILITAR O SUPORTE DE TRANSACAO / PARA O ENTITYMANAGER NO CASO -->
+<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+    <property name="entityManagerFactory" ref="entityManagerFactory" />
+</bean>
+
+	<!-- Anotações de Transação @Transaction -->
+	 <tx:annotation-driven/>
+	
+	<!-- NOSSO AMIGO DATASOURCE -->
+<bean id="dbDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+    p:driverClassName="com.mysql.jdbc.Driver" p:url="jdbc:my
+sql://localhost:3306/lojaonline"
+    p:username="root" p:password="123" p:initialSize="5" p:maxActive="10">
+</bean>
+
+<jee:jndi-lookup id="dbDataSource" jndi-name="jdbc/DatabaseName" expected-type="javax.sql.DataSource" />
+
+<bean id="dbDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <property name="jndiName" value="java:comp/env/jdbc/DatabaseName" />
+</bean>
+
+<context:component-scan base-package="br.com.lojaonline.dao">
+    <context:include-filter type="annotation"
+        expression="org.springframework.stereotype.Repository" />
+</context:component-scan>
+	
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
@@ -25,4 +56,4 @@
 
 	<context:component-scan base-package="br.com.lojaonline.controller"/>
 	                 
-</beans:beans>
+</beans>
