@@ -1,13 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link
+	href="${pageContext.request.contextPath}resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -89,7 +93,8 @@
 								</tr>
 								<tr>
 									<td>Estado:</td>
-									<td><select name="estado" id="estado" class= "btn btn-small btn-primary">
+									<td><select name="estado" id="estado"
+										class="btn btn-small btn-primary">
 											<option>Selecione...</option>
 											<option value="AC">AC</option>
 											<option value="AL">AL</option>
@@ -126,17 +131,14 @@
 									receber Promoções de ofertas deste Site!</td>
 								</tr>
 
-									<td colspan="2"><h4>
-											<input class="btn btn-small btn-primary" type="submit" id="cadastrar"
-												value="Ok" /> <input class="btn btn-small btn-primary" type="reset"
-												id="limpar" value="Limpar" /> <span class="style1">
-												Campos com (*)são obrigatórios! </span>
-										</h4> 
-										
-										
-										<script src="resources/js/bootstrap.min.js"></script>
-		<script src="resources/js/jquery.js"></script>
-		<script>
+								<td colspan="2"><h4>
+										<input class="btn btn-small btn-primary" type="submit"
+											id="cadastrar" value="Ok" /> <input
+											class="btn btn-small btn-primary" type="reset" id="limpar"
+											value="Limpar" /> <span class="style1"> Campos com
+											(*)são obrigatórios! </span>
+									</h4> <script src="resources/js/bootstrap.min.js"></script> <script
+										src="resources/js/jquery.js"></script> <script>
 			$('#carousel').animate({
 				"margin-left" : "+=800"
 			}, 10000);
@@ -236,7 +238,7 @@
 			});
 		</script>
 
-	</div>
+									</div>
 </body>
 
 </html>

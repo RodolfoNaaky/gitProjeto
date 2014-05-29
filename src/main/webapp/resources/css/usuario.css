@@ -1,32 +1,31 @@
-body{
-    background-color: #FFFFFF;
-    font-family:Comic Sans;
-    width: 940px;
-    margin: auto;						
+body {
+	background-color: #FFFFFF;
+	font-family: Comic Sans;
+	width: 940px;
+	margin: auto;
 }
 
-h1{
-	background-color:#FFFFFF;
-	padding-top:5px;
-	padding-left:5px;
-	padding-bottom:5px;
-	padding-right:5px;
-	color:#FF0000;
-	text-align:center; /* hack para o IE */
+h1 {
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	color: #FF0000;
+	text-align: center; /* hack para o IE */
 }
 
 td {
-color:#FF0000;
-/* a cor vermelha para as letras */
+	color: #FF0000;
+	/* a cor vermelha para as letras */
 }
 
-.cadastrar{
+.cadastrar {
 	background-color: #FF0000;;
 	color: #FFFFFF;
 }
 
-.limpar{
+.limpar {
 	background-color: #FF0000;;
 	color: #FFFFFF;
 }
-

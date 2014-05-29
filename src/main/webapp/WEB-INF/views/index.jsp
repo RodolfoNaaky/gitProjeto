@@ -1,13 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link
+	href="${pageContext.request.contextPath}resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -45,10 +49,11 @@
 							<br /></br> </br>
 
 							<div id="imagem">
-								<font align="center" color="blue"> <a
-									href="comprarps4" ><img src="resources/Imagens/a.png"
+								<font align="center" color="blue"> <a href="comprarps4"><img
+										src="resources/Imagens/a.png"
 										onMouseOver="this.src='resources/Imagens/f.png'"
-										onMouseOut="this.src='resources/Imagens/a.png'" width="500" height="300"></img></a>
+										onMouseOut="this.src='resources/Imagens/a.png'" width="500"
+										height="300"></img></a>
 									<p>Valor:R$1.669,00</p>
 									<p>12x R$161,32</p>
 									<p>sem juros</p>
@@ -56,10 +61,12 @@
 							</div>
 
 							<div id="imagem1">
-								<font align="center" color="red"> <a
-									href="comprarxbox"> <img src="resources/Imagens/x.png"
+								<font align="center" color="red"> <a href="comprarxbox">
+										<img src="resources/Imagens/x.png"
 										onMouseOver="this.src='resources/Imagens/d.png'"
-										onMouseOut="this.src='resources/Imagens/x.png'" width="500" height="300"></img></a>
+										onMouseOut="this.src='resources/Imagens/x.png'" width="500"
+										height="300"></img>
+								</a>
 									<p>Valor:R$1.999,00</p>
 									<p>12x R$165,83</p>
 									<p>sem juros</p>
@@ -69,21 +76,23 @@
 							<br />
 
 							<div id="imagem2">
-								<font align="center" color="red"> <a
-									href="comprarps3"> <img src="resources/Imagens/PS3.png"
+								<font align="center" color="red"> <a href="comprarps3">
+										<img src="resources/Imagens/PS3.png"
 										onMouseOver="this.src='resources/Imagens/e.png'"
 										onMouseOut="this.src='resources/Imagens/PS3.png'" width="500"
-										height="300"></img></a>
+										height="300"></img>
+								</a>
 									<p>Valor:R$1.249,00</p>
 									<p>12x R$104,80</p>
 									<p>sem juros</p></font>
 							</div>
 
 							<div id="imagem3">
-								<font align="center" color="red"> <a
-									href="Comprarwii"><img src="resources/Imagens/b.png"
+								<font align="center" color="red"> <a href="Comprarwii"><img
+										src="resources/Imagens/b.png"
 										onMouseOver="this.src='resources/Imagens/c.png'"
-										onMouseOut="this.src='resources/Imagens/b.png'" width="500" height="300"></img></a>
+										onMouseOut="this.src='resources/Imagens/b.png'" width="500"
+										height="300"></img></a>
 									<p>Valor:R$489,90</p>
 									<p>12x R$48,83
 									<p>

@@ -1,13 +1,14 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link href="resources/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -98,7 +99,7 @@ return true;
 }
 
 </script>
-				
+
 
 						<body>
 							<div align="center">
@@ -191,18 +192,18 @@ return true;
 										</tr>
 										<tr>
 											<td colspan="2"><h3>
-										<tr>
-											<td colspan="2"><h3>
-													<h3>Campos com (*) são obrigatórios!</h3>
-													<input class="btn btn-small btn-primary" type="submit"
-														id="cadastrar" value="Continuar o Cadastro" /> <input
-														class="btn btn-small btn-primary" type="reset" id="limpar"
-														value="Limpar Campos preenchidos!" /><br />
+													<tr>
+														<td colspan="2"><h3>
+																<h3>Campos com (*) são obrigatórios!</h3>
+																<input class="btn btn-small btn-primary" type="submit"
+																	id="cadastrar" value="Continuar o Cadastro" /> <input
+																	class="btn btn-small btn-primary" type="reset"
+																	id="limpar" value="Limpar Campos preenchidos!" /><br />
 
 
 
-												</h3></td>
-										</tr>
+															</h3></td>
+													</tr>
 									</table>
 								</form>
 							</div>

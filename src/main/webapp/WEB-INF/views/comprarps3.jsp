@@ -1,13 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link
+	href="${pageContext.request.contextPath}resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -40,7 +44,8 @@
 
 						<div align="center" id="imagemCompra">
 							<font size="50" color="red"> <a href=""><img
-									align="center" src="resources/Imagens/PS3.png" width="700" height="400"></img></a>
+									align="center" src="resources/Imagens/PS3.png" width="700"
+									height="400"></img></a>
 
 
 								<p>Valor:R$1.249,00</p>
@@ -63,8 +68,8 @@
 						</div>
 						<div>
 							<script src="resources/js/bootstrap.min.js"></script>
-		<script src="resources/js/jquery.js"></script>
-		<script>
+							<script src="resources/js/jquery.js"></script>
+							<script>
 			$('#carousel').animate({
 				"margin-left" : "+=800"
 			}, 10000);
@@ -164,7 +169,7 @@
 			});
 		</script>
 
-	</div>
+						</div>
 </body>
 
 </html>

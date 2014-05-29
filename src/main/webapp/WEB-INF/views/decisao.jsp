@@ -1,13 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link
+	href="${pageContext.request.contextPath}resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -61,8 +65,8 @@
 								</hr>
 
 							</h3>
-							<br /> <br /> <br /> <br /> <br /> 
-							
+							<br /> <br /> <br /> <br /> <br />
+
 
 							<h2>
 								<font color="red">
@@ -74,19 +78,19 @@
 
 									<h3>
 										<a href="login"><input color-button="red"
-											class="btn btn-primary" type="submit" id="sim" value="SIM" /></a> <a
-											href="cadastro"><input color-button="red"
+											class="btn btn-primary" type="submit" id="sim" value="SIM" /></a>
+										<a href="cadastro"><input color-button="red"
 											class="btn btn-primary" type="submit" id="nao" value="NÃO" /></a>
 									</h3>
 								</font>
 								<hr size="5" color="red">
 
 								</hr>
-							<div>
+								<div>
 
-								<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.js"></script>
-		<script>
+									<script src="js/bootstrap.min.js"></script>
+									<script src="js/jquery.js"></script>
+									<script>
 			$('#carousel').animate({
 				"margin-left" : "+=800"
 			}, 10000);
@@ -186,7 +190,7 @@
 			});
 		</script>
 
-	</div>
+								</div>
 </body>
 
 </html>

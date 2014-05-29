@@ -1,84 +1,84 @@
-
 html {
-background-image: url(ii.jpg);
-background-repeat: no-repeat;
--moz-background-size: 100% 100%;
--webkit-background-size: 100% 100%;
-background-size: 100% 100%;
+	background-image: url(ii.jpg);
+	background-repeat: no-repeat;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
- 
+
 #menu ul {
-padding: 0px;
-margin:50 px;
-float: center;
-width: 100%;
-background-color:white;
-list-style:none;
-font:Comic Sans;
+	padding: 0px;
+	margin: 50 px;
+	float: center;
+	width: 100%;
+	background-color: white;
+	list-style: none;
+	font: Comic Sans;
 }
- 
-#menu ul li { display: inline; }
- 
+
+#menu ul li {
+	display: inline;
+}
+
 #menu ul li a {
-background-color:white;
-color: red;
-text-decoration: none;
-border-bottom:20px solid white;
-padding: 30px 70px;
-float:;
-font: comic-sans;
+	background-color: white;
+	color: red;
+	text-decoration: none;
+	border-bottom: 20px solid white;
+	padding: 30px 70px;
+	float:;
+	font: comic-sans;
 }
- 
+
 #menu ul li a:hover {
-background-color:white;
-color: red;
-border-bottom:5px solid #EA0000;
+	background-color: white;
+	color: red;
+	border-bottom: 5px solid #EA0000;
 }
-#barradebusca h1{
-text-align: left;
-background-color:white;
-text-transform: uppercase;
-font-size: 45px;
-color: red;
+
+#barradebusca h1 {
+	text-align: left;
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 45px;
+	color: red;
 }
+
 #barradebusca {
-font-size: 15px;
-text-align: right;
+	font-size: 15px;
+	text-align: right;
 }
 
-h2{
-text-align:center;
-color:red;
-font-size:25px
-
-}
-p{
-font-size:20px
+h2 {
+	text-align: center;
+	color: red;
+	font-size: 25px
 }
 
-#imagem{
-position:absolute;
-left:1200px;
-top:300px;
-
-}
-#imagem1{
-position:absolute;
-left:200px;
-top:300px;
-}
-#imagem2{
-position:absolute;
-left:200px;
-top:800px;
+p {
+	font-size: 20px
 }
 
-#imagem3{
-position:absolute;
-left:1200px;
-top:800px;
-
-
+#imagem {
+	position: absolute;
+	left: 1200px;
+	top: 300px;
 }
 
+#imagem1 {
+	position: absolute;
+	left: 200px;
+	top: 300px;
+}
 
+#imagem2 {
+	position: absolute;
+	left: 200px;
+	top: 800px;
+}
+
+#imagem3 {
+	position: absolute;
+	left: 1200px;
+	top: 800px;
+}

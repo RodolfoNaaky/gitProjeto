@@ -1,13 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link
+	href="${pageContext.request.contextPath}resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -40,10 +44,10 @@
 
 						<div align="center">
 							<font color="red">
-								<p>
-									A Naaky Games esta Situada na Cidade de Santa Albertina-SP!</p>
-									<p>Hoje é referencia "Mundial" na venda de Consoles com os menores
-									Preços do Mercado!</p>
+								<p>A Naaky Games esta Situada na Cidade de Santa
+									Albertina-SP!</p>
+								<p>Hoje é referencia "Mundial" na venda de Consoles com os
+									menores Preços do Mercado!</p>
 								</p>
 								<h3>
 									<p>Cidade: Santa Albertina</p>

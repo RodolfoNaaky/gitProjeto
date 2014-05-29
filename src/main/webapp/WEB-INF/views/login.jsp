@@ -1,13 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <!-- Bootstrap -->
-	<title>Home</title>
-	<link href="${pageContext.request.contextPath}resources/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}resources/css/index.css" media="screen">
-	<script src="resources/js/jquery.js" type="text/javascript"></script>   
+<title>Home</title>
+<link
+	href="${pageContext.request.contextPath}resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}resources/css/index.css"
+	media="screen">
+<script src="resources/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -38,36 +42,37 @@
 						</div>
 						<div align="center">
 							<h2>Ja é cadastrado, faça aqui seu Login!</h2>
-							
+
 
 
 							<h3>
 								<input type="text" name="login" value=""
 									placeholder="Username or Email" id="usuario">
-							</h3><br/>
+							</h3>
+							<br />
 							<h3>
 								<input type="password" name="password" value=""
 									placeholder="Password" id="senha">
 							</h3>
 							<h3 class="remember_me">
 
-								<p class="submit"><input type="submit" class="btn btn-primary" name="commit"
-									value="Login">
-							</h3><br/>
-
-								<label>
-									<h4>
-										Deseja que o site salve sua senha.<input type="checkbox"
-											name="remember_me" id="remember_me">
-									</h4>
-									<div id="login-help">
-										<p>
-											Esqueceu sua senha? <a href="login">Clique aqui!</a>.
-										</p>
-										<p>
-											Ainda não possui cadastro? <a href="cadastro">Cadastre-se!</a>.
-										</p>
-									</div>
+								<p class="submit">
+									<input type="submit" class="btn btn-primary" name="commit"
+										value="Login">
+							</h3>
+							<br /> <label>
+								<h4>
+									Deseja que o site salve sua senha.<input type="checkbox"
+										name="remember_me" id="remember_me">
+								</h4>
+								<div id="login-help">
+									<p>
+										Esqueceu sua senha? <a href="login">Clique aqui!</a>.
+									</p>
+									<p>
+										Ainda não possui cadastro? <a href="cadastro">Cadastre-se!</a>.
+									</p>
+								</div>
 						</div>
 						</label>
 						</form>

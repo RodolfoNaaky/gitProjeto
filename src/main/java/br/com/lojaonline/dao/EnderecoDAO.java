@@ -14,30 +14,30 @@ import br.com.lojaonline.model.Endereco;
 @Repository("enderecoDao") 
 public class EnderecoDAO {
 	
-	public EntityManager entityManager;
-		
+	private EntityManager em;
+	
 	@PersistenceContext
-	public void setEntityManager(EntityManager entityManager){
-		this.entityManager = entityManager;
-	}
+    public void setEntityManager(EntityManager em) {
+        this.em = em;
+    }
 
 	public Endereco find(Integer idEndereco) {
-		return entityManager.find(Endereco.class, idEndereco);
+		return em.find(Endereco.class, idEndereco);
 	}
 	
 	@Transactional
 	public void persist(Endereco endereco) {
-		entityManager.persist(endereco);
+		em.persist(endereco);
 	}
 	
 	@Transactional
 	public void merge(Endereco endereco) {
-		entityManager.merge(endereco);
+		em.merge(endereco);
 	}
 	
 	@Transactional
 	public void remove(Endereco endereco) {
-		entityManager.remove(endereco);
+		em.remove(endereco);
 	}
 /*
 	@SuppressWarnings("unchecked")
@@ -48,7 +48,7 @@ public class EnderecoDAO {
 	
 	  @SuppressWarnings("unchecked")
 	public List<Endereco> listarEndereco() {
-	        Query query = entityManager.createQuery("SELECT endereco FROM endereco;");
+	        Query query = em.createQuery("SELECT endereco FROM endereco;");
 	        List<Endereco> enderecos = (List<Endereco>) query.getResultList();
 	        return enderecos;
 	    }

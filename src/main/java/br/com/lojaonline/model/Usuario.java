@@ -1,5 +1,6 @@
 package br.com.lojaonline.model;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.Column;
@@ -13,7 +14,9 @@ import javax.persistence.Table;
 import br.com.lojaonline.model.Endereco;
 
 @Entity @Table(name = "usuario")
-public class Usuario {
+public class Usuario implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	@Id @Column(name="idUsuario") @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idUsuario;
