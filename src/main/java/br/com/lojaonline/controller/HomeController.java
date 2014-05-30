@@ -1,33 +1,23 @@
 package br.com.lojaonline.controller;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import br.com.lojaonline.dao.EnderecoDAO;
+import br.com.lojaonline.model.Endereco;
 
 @Controller
 public class HomeController {
-//Código do Mano
-	@Controller
-	@RequestMapping(value = "/views/*")
-	public class EnderecoController {
 
-		@Autowired
-		private EnderecoDAO enderecoDao;
-	}
-
-	@Repository("enderecoDao")
-	public class EnderecoDAO {
-
-		@PersistenceContext
-		public EntityManager entityManager;
-
-	}
-// Fim Código mano
+	
+	@Autowired
+	private EnderecoDAO enderecoDao;
+	
 	@RequestMapping(value = "/")
 	public ModelAndView raiz() {
 		return new ModelAndView("index");
@@ -97,5 +87,23 @@ public class HomeController {
 	public ModelAndView comprarps3() {
 		return new ModelAndView("comprarps3");
 	}
+	
+	@RequestMapping(value = "testeendereco")
+	public ModelAndView endereco() {
+		return new ModelAndView("testeendereco");
+	}
 
+	
+	  @RequestMapping( value ="/testeendereco", method = RequestMethod.GET)
+	  //@RequestMapping(value = "/listar", method = RequestMethod.GET)
+	  public String listarTodos(Model model) {
+	    model.addAttribute("enderecos", enderecoDao.listarEndereco());
+	    return "testeendereco";
+	  }
+	  
+	  @RequestMapping(value = "/addEndereco", method = RequestMethod.POST)
+	  public String addPerson(@ModelAttribute Endereco endereco) {
+	    enderecoDao.persist(endereco);
+	    return "redirect:/testeendereco";
+	  }
 }

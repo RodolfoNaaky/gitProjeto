@@ -23,12 +23,6 @@ CONSTRAINT fk_EnderecoId_Usuario FOREIGN KEY (idEndereco)
 REFERENCES endereco(idEndereco)ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-delete from endereco where idEndereco = 1;
-select * from endereco;
-select * from usuario;
-insert into endereco values(null,'Rua 12','1000','15700000','Jales','SP');
-insert into usuario values (null,last_insert_id(),'José','1985-12-01','3333-333','jose@naaky.com','joseanaaky','1234'); 
-
 CREATE TABLE fornecedor (
 idFornecedor INT NOT NULL AUTO_INCREMENT,
 idEndereco INT NOT NULL,

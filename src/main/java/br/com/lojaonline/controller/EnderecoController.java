@@ -1,5 +1,6 @@
 package br.com.lojaonline.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -10,11 +11,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import br.com.lojaonline.dao.EnderecoDAO;
 import br.com.lojaonline.model.Endereco;
 
+/*
+
 @Controller @RequestMapping(value="/views/*")
 public class EnderecoController {
 
 	
+	
+	
+	@Autowired
 	private EnderecoDAO enderecoDao;
+
 	
 	@RequestMapping(value = "/listar/{id}", method = RequestMethod.GET)
 	public String show(@PathVariable("idEndereco") Integer idEndereco, ModelMap modelMap) {
@@ -22,10 +29,10 @@ public class EnderecoController {
 		return "contato/show";
 	}	
 
-	@RequestMapping(value = "/listar", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String list(ModelMap modelMap) {
 		modelMap.addAttribute("enderecos", enderecoDao.listarEndereco());
-		return "views/listar";
+		return "testeendereco";
 	}
 
 	@RequestMapping(value = "/contato/{id}", method = RequestMethod.DELETE)
@@ -40,10 +47,20 @@ public class EnderecoController {
 		return "endereco/create";
 	}
 
-	@RequestMapping(value = "/endereco", method = RequestMethod.POST)
+	
+	/*
+	 
+	  @RequestMapping(value = "/addPerson", method = RequestMethod.POST)
+	  public String addPerson(@ModelAttribute Person person) {
+	    personSvc.add(person);
+	    return "redirect:/";
+	  }
+	  
+	
+	@RequestMapping(value = "/addEndereco", method = RequestMethod.POST)
 	public String create(@ModelAttribute("endereco") Endereco endereco ) {
 		enderecoDao.persist(endereco);
-		return "redirect:/endereco";
+		return "redirect:/testeendereco";
 	}
 
 	@RequestMapping(value = "/endereco/{id}/form", method = RequestMethod.GET)
@@ -58,4 +75,7 @@ public class EnderecoController {
 		return "redirect:/endereco";
 	}
 	
+	
+	
 }
+*/

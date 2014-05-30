@@ -1,27 +1,40 @@
 
 package br.com.lojaonline.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity @Table(name = "endereco")
-public class Endereco implements Serializable {
+public class Endereco {
 	
-	private static final long serialVersionUID = 1L;
 	
-	@Id @Column(name="idEndereco") @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue()
+	@Column(name = "idEndereco")
 	private Integer idEndereco;
+	
+	//@Column(name="endereco")
 	private String endereco;
+	
+	//@Column(name = "numero")
 	private Integer numero;
+	
+	//@Column(name="cep")
 	private Integer cep;
+	
+	//@Column(name = "cidade")
 	private String cidade;
+	
+	//@Column(name = "estado")
 	private String estado;
+	
+	
+	public Endereco(){
+		
+	}
 	
 	public Integer getIdEndereco() {
 		return idEndereco;
